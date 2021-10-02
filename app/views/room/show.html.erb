@@ -1,0 +1,50 @@
+<div class = "note-box">
+<h1>交換ノート</h1>
+   <div class = "note-name">
+      投稿者：<%= link_to(@user.name, "/user/#{@user.id}") %>
+   </div>
+   <div class = "note-time">
+      <%= @note.updated_at.to_s(:datetime_jp) %>
+  </div>
+   <div class = note-img>
+      <img src = "<%= "/notes/#{@note.image_name}" %>">  
+  </div>
+  <div class = "note-link" >
+      <%= link_to("コメント一覧", "/room/#{@current_room.id}/comment_index") %>
+      <%= link_to("更新", "/room/#{@current_room.id}/image_new") %>
+  </div>
+</div>
+
+<div class = "note-box">
+<h1>交換ノート</h1>
+   <div class = "note-name">
+      投稿者：<%= link_to(@user2.name, "/user/#{@user2.id}") %>
+   </div>
+   <div class = "note-time">
+      <%= @note2.updated_at.to_s(:datetime_jp) %>
+  </div>
+   <div class = note-img>
+      <img src = "<%= "/notes2/#{@note2.image_name}" %>">  
+  </div>
+  <div class = "note-link" >
+      <%= link_to("コメント一覧", "/room/#{@current_room.id}/comment_index") %>
+      <%= link_to("更新", "/room/#{@current_room.id}/image_new/2") %>
+  </div>
+</div>
+
+<div class = "note-box">
+<h1>交換ノート</h1>
+   <div class = "note-name">
+      投稿者：<%= link_to(@user3.name, "/user/#{@user3.id}") %>
+   </div>
+   <div class = "note-time">
+      <%= @note3.updated_at.to_s(:datetime_jp) %>
+  </div>
+   <div class = note-img>
+      <img src = "<%= "/notes3/#{@note3.image_name}" %>">  
+  </div>
+  <div class = "note-link" >
+      <%= link_to("コメント一覧", "/room/#{@current_room.id}/comment_index") %>
+      <%= link_to("更新", "/room/#{@current_room.id}/image_new/3") %>
+  </div>
+</div>

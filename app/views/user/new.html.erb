@@ -1,0 +1,19 @@
+<div class="container">
+<%= form_tag("/user/create") do %>
+      <h1>新規登録</h1>
+      <% if @errormessage %> 
+     <div class="errormessage">
+         <%= @errormessage %>
+     </div>
+  <% end %>
+      <p>ユーザー名</p>
+      <input name="name" type="text">
+      <p>メールアドレス</p>
+      <input name="email" type="text" >
+      <p>パスワード</p>
+      <input name="password" type="password">
+      <ul>
+         <li><input type="submit"></li>
+      </ul>
+  <% end %>
+</div>

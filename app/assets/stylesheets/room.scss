@@ -1,0 +1,213 @@
+// Place all the styles related to the room controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.newroom-box{
+    padding-bottom: 20px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 2px 6px #c1ced7;
+    width:500px;
+    margin: 100px auto 0 auto;
+}
+
+@media(max-width:1000px){
+    .newroom-box{
+        margin-top: 300px;
+        width: 700px;
+    }
+    .newroom-box h1{
+        font-size: 70px;
+    }
+    .newroom-box p{
+        font-size: 30px;
+    }
+    .newroom-box input[type="text"]{
+        margin: 10px 0px;
+        height: 50px;
+        width: 400px;
+        font-size: 30px;
+    }
+    .newroom-box input[type="password"]{
+        margin: 10px 0px;
+        height: 50px;
+        width: 400px;
+        font-size: 30px;
+    }
+}
+
+.room-join-box{
+    padding-bottom: 20px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 2px 6px #c1ced7;
+    width:500px;
+    margin: 100px auto 0 auto;
+}
+
+@media(max-width:1000px){
+    .room-join-box{
+        margin-top: 300px;
+        width: 700px;
+    }
+    .room-join-box h1{
+        font-size: 70px;
+    }
+    .room-join-box p{
+        font-size: 30px;
+    }
+    .room-join-box input[type="text"]{
+        margin: 10px 0px;
+        height: 50px;
+        width: 400px;
+        font-size: 30px;
+    }
+    .room-join-box input[type="password"]{
+        margin: 10px 0px;
+        height: 50px;
+        width: 400px;
+        font-size: 30px;
+    }
+
+}
+
+
+.room-box{
+    padding: 20px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 2px 6px #c1ced7;
+    width: 200px;
+    margin: 50px auto 0 auto;
+}
+
+.room-index{
+    padding-bottom: 50px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 2px 6px #c1ced7;
+    width:500px;
+    margin: 100px auto 0 auto;
+}
+
+@media(max-width:1000px){
+    .room-index{
+        margin-top: 300px;
+        width: 700px;
+    }
+    .room-index h1{
+        font-size: 70px;
+    }
+    .room-index a{
+        font-size: 30px;
+    }
+    .room-box{
+        width: 400px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}
+
+
+.note-box{
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 2px 6px #c1ced7;
+    width:800px;
+    margin: 20px auto 0 auto;
+    padding: 10px 0 20px 0;
+}
+
+.note-name{
+    padding: 0 0 20px 20px;
+    text-align: left;
+    float: left;
+}
+
+.note-time{
+    padding:0px 20px 20px 0;
+    text-align: right;
+    float: right;
+}
+
+.note-link{
+    padding: 20px 20px 0 20px;
+    text-align: right;
+}
+
+.note-link a{
+    padding-right: 20px;
+}
+
+.note-img img{
+    width: 640px;
+    height: 486px;
+    object-fit: contain;
+
+}
+
+.note-view-box{
+    margin-bottom: 20px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 2px 6px #c1ced7;
+    width:800px;
+    margin: 50px auto 0 auto;
+    padding: 20px 0 20px 0;
+}
+
+.note-textarea{
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid rgb(216, 218, 223);
+    resize: none;
+    margin-bottom:10px;
+    width: 400px;
+}
+
+.note-comment input{
+    margin: 20px 0;
+}
+
+.note-comment-box{
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.note-comment-box h1{
+    margin-top: 50px;
+}
+
+.comment-box{
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 2px 6px #c1ced7;
+    width:500px;
+    margin: 20px auto 0 auto;
+}
+
+.comment-content{
+    margin-top: 50px;
+    padding: 50px;
+    font-size: 30px;
+}
+
+
+.comment-user{
+    padding: 20px;
+    text-align: left;
+    float: left;
+}
+
+.comment-time{
+    padding: 20px;
+    text-align: right;
+    float: right;
+}
+
+.comment-title{
+    text-align: left;
+    padding-left: 40px;
+    border-bottom: 1px solid black;
+}
+

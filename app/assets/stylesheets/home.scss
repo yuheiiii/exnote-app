@@ -1,0 +1,179 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//-----------共通-------------------//
+
+input[type="submit"]{
+    margin-top: 20px;
+    font-size: 25px;
+    background-color: white;
+    color:black;
+ }
+
+ li{
+     list-style-type: none;
+ }
+
+//----------ボディー---------------//
+
+body{
+    text-align: center;
+}
+
+
+a {
+    text-decoration: none;
+    color:black;
+  }
+
+  @media(max-width:1000px){
+    .top{
+        margin-top: 300px;
+    }
+}
+
+.top{
+    display: flex;
+    margin-top: 0px;
+    height: 700px;
+}
+
+@media(max-width:1000px){
+    .top{
+       display: block;
+    }
+}
+
+.top-right{
+    margin: 100px;
+}
+
+@media(max-width:1000px){
+    .top-right{
+        margin-top: 200px;
+    }
+}
+
+.top-right h1{
+    font-size: 50px;
+}
+
+.top-left{
+   margin: 30px 50px 0px 0px;
+}
+
+@media(max-width:1000px){
+    .top-left{
+        margin-right: 0px;
+    }
+}
+
+.top li{
+    height: 60px;
+    margin: 50px auto;
+    border: 1px solid white;
+    border-radius: 30px;
+    width: 200px;
+    color: white;
+    background-color:rgb(27, 173, 27);
+}
+
+.top a{
+    display: block;
+    line-height: 60px;
+}
+
+.top li:hover{
+    opacity: 0.8;
+}
+
+//----------ヘッダー---------------//
+
+header{
+    background-color:gray;
+    width: 100%;
+    height: 70px;
+}
+
+.header-logo{
+    text-align: left;
+    line-height: 70px;
+    float: left;
+    cursor:pointer;
+    padding: 0px 0px 0px 20px;
+    font-size: 55px;
+    font-family:Monotype Corsiva;
+}
+
+.header_menus li{
+    list-style-type: none;
+    text-align: right;
+    float: right;
+    padding:0px 20px;
+    cursor:pointer;
+}
+
+.header_menus a{
+    display: block;
+    font-size: 17px;
+    font-family: monospace;
+    line-height: 70px;
+}
+
+.header_menus li:hover{
+    background-color:rgb(141, 139, 139) ;
+    color: white;
+}
+
+
+//-----------メイン-------------------//
+/*main{
+    height: 700px;
+}*/
+
+@media(max-width:1000px){
+    main{
+        height: 1650px;
+    }
+}
+
+//-----------flash--------------------//
+.flash {
+    padding: 10px 0;
+    color: white;
+    background: rgb(88, 251, 216);
+    text-align: center;
+    position: absolute;
+    top: 83px;
+    z-index: 10;
+    width: 99%;
+    border-radius: 0 0 2px 2px;
+    font-size: 14px;
+  }
+
+  //------------使い方-------------------//
+  .how_to_use_box{
+      box-shadow: 0 2px 6px #797d80;
+      background-color: white;
+      padding: 20px;
+      margin: 20px auto;
+      width: 700px;
+  }
+
+  .how_to_use h1{
+      padding-top: 20px;
+  }
+
+  .login_room_img{
+      box-shadow: 0 2px 6px #a9acaf;
+  }
+
+  .login_user_img{
+    box-shadow: 0 2px 6px #a9acaf;
+  }
+
+  .info{
+      font-size: 5px;
+      margin-top: 15px;
+  }

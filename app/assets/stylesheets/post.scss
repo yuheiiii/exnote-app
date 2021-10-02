@@ -1,0 +1,151 @@
+// Place all the styles related to the post controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+*{
+    text-decoration: none;
+}
+
+.post-index{
+    margin-top: 50px;
+}
+
+.post-box{
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 2px 6px #c1ced7;
+    width:500px;
+    margin: 20px auto 0 auto;
+}
+
+.post-content{
+    text-decoration: none;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.post-name{
+    padding: 30px;
+    text-align: left;
+}
+
+.show-item{
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 2px 6px #c1ced7;
+    overflow: hidden;
+    height: auto;
+    width:500px;
+    margin: 100px auto 0 auto;
+}
+
+.show-content{
+    margin: 10px;
+    font-size: 25px;
+}
+
+.show-time{
+    margin: 10px 0px 50px 0px;
+    font-size: 12px;
+}
+
+.show-edit a{
+    margin: 20px 10px 0px 10px;
+    padding: 3px 5px; 
+    text-align: right;
+    float: right;
+}
+
+.post-user{
+    text-align: left;
+}
+
+
+.post-new{
+    box-shadow: 0 2px 6px #aeb4b9;
+    margin: 100px auto;
+    padding: 20px;
+    width: 600px;
+}
+
+.post-new textarea{
+    font-size: 20px;
+    padding: 10px;
+    min-height: 140px;
+    border: 1px solid rgb(216, 218, 223);
+    resize: none;
+    width: 400px;
+}
+
+.post-new li{
+    list-style-type: none;
+}
+
+.post-new input[type="submit"]{
+   margin-top: 20px;
+   font-size: 25px;
+   background-color: white;
+   color:black;
+}
+
+.edit-area{
+    box-shadow: 0 2px 6px #aeb4b9;
+    margin: 50px auto;
+    padding: 20px;
+    width: 600px;
+}
+
+.edit-area textarea{
+    font-size: 20px;
+    padding: 10px;
+    min-height: 140px;
+    border: 1px solid rgb(216, 218, 223);
+    resize: none;
+    width: 400px;
+}
+
+.edit-area li{
+    list-style: none;
+}
+
+.edit-area input[type="submit"]{
+    margin-top: 20px;
+    font-size: 25px;
+    background-color: white;
+    color:black;
+}
+
+.error-message{
+    margin-bottom: 10px;
+    color: red;
+}
+
+.image-new-box{
+    margin-bottom: 20px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 2px 6px #c1ced7;
+    width:500px;
+    margin: 100px auto 0 auto;
+}
+
+@media(max-width:1000px){
+    .image-new-box{
+        margin-top: 500px;
+        width: 700px;
+    }
+    .image-new-box h1{
+        font-size: 70px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .image-new-box input[type="file"]{
+        margin-top: 60px;
+        font-size: 30px;
+    }
+    .image-new-box input[type="submit"]{
+        margin-top:60px;
+        margin-bottom: 30px;
+    }
+
+}

@@ -1,0 +1,19 @@
+<div class="room-join-box">
+<%= form_tag("/room/join") do %>
+  <h1>ルーム参加</h1>
+  <% if @errormessage %> 
+     <div class="errormessage">
+         <%= @errormessage %>
+     </div>
+  <% end %>
+  <p>ルームid</p>
+  <ul>
+     <li><input name="room_id" type="text"></li>
+ </ul>
+  <p>パスワード</p>
+  <ul>
+     <li><input name="password" type="password"></li>
+ </ul>
+ <input type="submit" value="入室">
+ <% end %>
+<div>

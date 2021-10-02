@@ -1,0 +1,14 @@
+<div class="image-new-box">
+  <h1>ノート投稿</h1>
+  <% if @errormessage %> 
+     <div class="errormessage">
+         <%= @errormessage %>
+     </div>
+  <% end %>
+  <%= form_tag("/room/#{params[:id]}/image_create/3", {multipart: true}) do %>
+      <input name="image" type="file">
+      <ul>
+          <li><input type="submit" value="投稿"></li>
+      </ul>
+  <% end %>
+</div>
