@@ -7,4 +7,11 @@ class HomeController < ApplicationController
 
   def how_to_use
   end
+
+  def tos
+  end
+
+  def privacyPolicy
+  end
+
 end

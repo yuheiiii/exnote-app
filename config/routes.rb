@@ -24,6 +24,8 @@ Rails.application.routes.draw do
   get "room/:id" => "room#show"
   
   get "/how_to_use" => "home#how_to_use"
+  get "/tos" => "home#tos"
+  get "/privacyPolicy" => "home#privacyPolicy"
   get "/" => "home#top"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -17,30 +17,21 @@ input[type="submit"]{
 
 //----------ボディー---------------//
 
-body{
-    text-align: center;
-}
-
-
 a {
     text-decoration: none;
     color:black;
   }
 
-  @media(max-width:1000px){
-    .top{
-        margin-top: 300px;
-    }
-}
 
 .top{
     display: flex;
-    margin-top: 0px;
-    height: 700px;
+    margin: 0px;
+    height: 655px;
 }
 
 @media(max-width:1000px){
     .top{
+       margin-top: 200px;
        display: block;
     }
 }
@@ -51,7 +42,7 @@ a {
 
 @media(max-width:1000px){
     .top-right{
-        margin-top: 200px;
+        margin: 100px;
     }
 }
 
@@ -60,12 +51,14 @@ a {
 }
 
 .top-left{
-   margin: 30px 50px 0px 0px;
+    padding-bottom: 0;
+   margin: 20px 50px 0px 0px;
 }
 
 @media(max-width:1000px){
     .top-left{
         margin-right: 0px;
+        margin-bottom: 0px;
     }
 }
 
@@ -126,15 +119,45 @@ header{
     color: white;
 }
 
+//-----------フッター-----------------//
+
+footer{
+    text-align: center;
+}
+
+@media(max-width:1000px){
+    footer{
+        margin-bottom: 30px;
+    }
+}
+
+.copyright{
+    margin-top: 0px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.tos{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.privacyPolicy{
+    display: inline-block;
+}
 
 //-----------メイン-------------------//
 /*main{
     height: 700px;
 }*/
 
+main{
+    text-align: center;
+}
+
 @media(max-width:1000px){
     main{
-        height: 1650px;
+        height: 1600px;
     }
 }
 
