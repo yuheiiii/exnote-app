@@ -9,6 +9,16 @@
     box-shadow: 0 2px 6px #c1ced7;
     width:500px;
     margin: 100px auto 0 auto;
+    text-align: center;
+}
+
+.room-form input{
+    display: block;
+    margin: 0 auto;
+}
+
+.room-form input[type="submit"]{
+    margin-top: 40px;
 }
 
 @media(max-width:1000px){
@@ -23,13 +33,13 @@
         font-size: 30px;
     }
     .newroom-box input[type="text"]{
-        margin: 10px 0px;
+        margin: 10px auto 100px auto;
         height: 50px;
         width: 400px;
         font-size: 30px;
     }
     .newroom-box input[type="password"]{
-        margin: 10px 0px;
+        margin: 10px auto 100px auto;
         height: 50px;
         width: 400px;
         font-size: 30px;
@@ -43,6 +53,7 @@
     box-shadow: 0 2px 6px #c1ced7;
     width:500px;
     margin: 100px auto 0 auto;
+    text-align: center;
 }
 
 @media(max-width:1000px){
@@ -57,16 +68,20 @@
         font-size: 30px;
     }
     .room-join-box input[type="text"]{
-        margin: 10px 0px;
+        margin: 10px auto 100px auto;
         height: 50px;
         width: 400px;
         font-size: 30px;
     }
     .room-join-box input[type="password"]{
-        margin: 10px 0px;
+        margin: 10px auto 100px auto;
         height: 50px;
         width: 400px;
         font-size: 30px;
+    }
+
+    .room-join-box input[type="submit"]{
+        height: 50px;
     }
 
 }
@@ -88,6 +103,7 @@
     box-shadow: 0 2px 6px #c1ced7;
     width:500px;
     margin: 100px auto 0 auto;
+    text-align: center;
 }
 
 @media(max-width:1000px){
@@ -116,6 +132,7 @@
     width:800px;
     margin: 20px auto 0 auto;
     padding: 10px 0 20px 0;
+    text-align: center;
 }
 
 .note-name{
@@ -165,13 +182,16 @@
     width: 400px;
 }
 
-.note-comment input{
-    margin: 20px 0;
+.note-comment-box input[type="submit"]{
+    margin: 20px 20px;
+    background-color: white;
+    width: 100px;
 }
 
 .note-comment-box{
     padding-bottom: 10px;
     border-bottom: 1px solid black;
+    text-align: center;
 }
 
 .note-comment-box h1{
@@ -184,6 +204,7 @@
     box-shadow: 0 2px 6px #c1ced7;
     width:500px;
     margin: 20px auto 0 auto;
+    text-align: center;
 }
 
 .comment-content{

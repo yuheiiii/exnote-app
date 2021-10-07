@@ -17,7 +17,7 @@ class UserController < ApplicationController
         flash[:notice] = "ユーザー登録が完了しました"
         redirect_to("/room/index")
       else
-        @errormessage = "入力内容に重複または空欄があります"
+        @errormessage = "入力内容にエラーがあります"
         render("user/new")
       end
   end

@@ -7,6 +7,15 @@
     margin: 100px auto;
     padding: 20px;
     width: 600px;
+    text-align: center;
+}
+
+.container-new{
+    box-shadow: 0 2px 6px #aeb4b9;
+    margin: 100px auto;
+    padding: 20px;
+    width: 600px;
+    text-align: center;
 }
 
 @media(max-width:1000px){
@@ -20,21 +29,36 @@
         font-size: 40px;
     }
     .container input[type="text"]{
-        margin: 10px 0px;
+        margin: 10px auto;
         height: 50px;
         width: 400px;
         font-size: 30px;
     }
     .container input[type="password"]{
-        margin: 10px 0px;
+        margin: 10px auto 100px auto;
         height: 50px;
         width: 400px;
         font-size: 30px;
     }
 
+    .container input[type="submit"]{
+        margin-top: 50px;
+        height: 50px;
+        width: 400px;
+    }
 
+    .password-new{
+        margin-bottom: 5px;
+    }
 
 }
+
+    .info-new-box{
+        margin-top: 20px;
+        text-align: center;
+        color: gray;
+        opacity: 0.8;
+    }
 
 .errormessage{
     color: red;

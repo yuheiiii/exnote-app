@@ -1,19 +1,23 @@
 <div class="container">
-<%= form_tag("/user/create") do %>
-      <h1>新規登録</h1>
-      <% if @errormessage %> 
-     <div class="errormessage">
-         <%= @errormessage %>
-     </div>
-  <% end %>
-      <p>ユーザー名</p>
-      <input name="name" type="text">
-      <p>メールアドレス</p>
-      <input name="email" type="text" >
-      <p>パスワード</p>
-      <input name="password" type="password">
-      <ul>
-         <li><input type="submit"></li>
-      </ul>
+    <%= form_tag("/user/create") do %>
+       <h1>新規登録</h1>
+       <% if @errormessage %> 
+          <div class="errormessage">
+              <%= @errormessage %>
+          </div>
+       <% end %>
+       <div class="user-new-form">
+              <p>ユーザー名</p>
+              <input name="name" type="text">
+              <p>メールアドレス</p>
+              <input name="email" type="text" >
+              <p>パスワード</p>
+              <input name="password" type="password" class="password-new"><br>
+             <div class="info-new-box">
+                <div class="tos-new"><%= link_to("利用規約", "/tos") %></div>
+                <div class="privacyPolicy-new"><%= link_to("プライバシーポリシー", "/privacyPolicy") %></div>
+             </div>
+             <input type="submit" value="利用規約に同意して登録"></li>
+       </div>
   <% end %>
 </div>

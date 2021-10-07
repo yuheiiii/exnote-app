@@ -6,12 +6,11 @@
      </div>
   <% end %>
   <%= form_tag("/login") do %>
+          <div class="room-form">
           <p>メールアドレス</p>
           <input name="email" type="text">
           <p>パスワード</p>
           <input name="password" type="password" >
-          <ul>
-            <li><input type="submit" value="ログイン"><li>
-          </ul>
+          <input type="submit" value="ログイン">
   <% end %>
 </div>
