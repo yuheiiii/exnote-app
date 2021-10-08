@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  resources :home
+  root 'home#top'
+
   post "post/:id/comment" => "post#comment"
   
   get "signup" => "user#new"
