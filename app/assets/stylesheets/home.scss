@@ -231,11 +231,20 @@ main{
 //------------利用規約----------------------//
 
 .tos-box{
-    text-align: center;
+    text-align: left;
     width: 700px;
     margin: 30px auto 0 auto;
     padding: 50px;
     border: 1px solid yellowgreen;
+}
+
+.tos-box p{
+    text-align: left;
+}
+
+.tos-box li{
+    text-align: left;
+    list-style-type: decimal;
 }
 
 //-----------プライバシーポリシー---------------//
