@@ -7,7 +7,7 @@
       <%= @note.updated_at.to_s(:datetime_jp) %>
   </div>
    <div class = note-img>
-      <img src = "<%= "/notes/#{@note.image_name}" %>">  
+      <img src = "<%= "/assets/note/#{@note.image_name}" %>">  
   </div>
   <div class = "note-link" >
       <%= link_to("コメント一覧", "/room/#{@current_room.id}/comment_index") %>
@@ -24,7 +24,7 @@
       <%= @note2.updated_at.to_s(:datetime_jp) %>
   </div>
    <div class = note-img>
-      <img src = "<%= "/notes2/#{@note2.image_name}" %>">  
+      <img src = "<%= "/assets/note2/#{@note2.image_name}" %>">  
   </div>
   <div class = "note-link" >
       <%= link_to("コメント一覧", "/room/#{@current_room.id}/comment_index") %>
@@ -41,7 +41,7 @@
       <%= @note3.updated_at.to_s(:datetime_jp) %>
   </div>
    <div class = note-img>
-      <img src = "<%= "/notes3/#{@note3.image_name}" %>">  
+      <img src = "<%= "/assets/note3/#{@note3.image_name}" %>">  
   </div>
   <div class = "note-link" >
       <%= link_to("コメント一覧", "/room/#{@current_room.id}/comment_index") %>

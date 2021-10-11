@@ -74,7 +74,7 @@ class PostController < ApplicationController
       @note.image_name = "#{@current_room.id}.jpg"
       @note.user_id = @current_user.id
       image = params[:image]
-      File.binwrite("public/notes/#{@note.image_name}", image.read)
+      File.binwrite("app/assets/images/note/#{@note.image_name}", image.read)
     end
 
     if @note.save
@@ -96,7 +96,7 @@ class PostController < ApplicationController
       @note.image_name = "#{@current_room.id}.jpg"
       @note.user_id = @current_user.id
       image = params[:image]
-      File.binwrite("public/notes2/#{@note.image_name}", image.read)
+      File.binwrite("app/assets/images/note2/#{@note.image_name}", image.read)
     end
 
     if @note.save
@@ -118,7 +118,7 @@ class PostController < ApplicationController
       @note.image_name = "#{@current_room.id}.jpg"
       @note.user_id = @current_user.id
       image = params[:image]
-      File.binwrite("public/notes3/#{@note.image_name}", image.read)
+      File.binwrite("app/assets/images/note3/#{@note.image_name}", image.read)
     end
 
     if @note.save
