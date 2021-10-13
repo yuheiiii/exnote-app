@@ -1,5 +1,5 @@
 <div class = "note-box">
-<h1>交換ノート</h1>
+<h1>交換ノート 1</h1>
    <div class = "note-name">
       投稿者：<%= link_to(@user.name, "/user/#{@user.id}") %>
    </div>
@@ -7,7 +7,7 @@
       <%= @note.updated_at.to_s(:datetime_jp) %>
   </div>
    <div class = note-img>
-      <img src = "<%= "/notes/#{@note.image_name}" %>">  
+      <img src = "<%= "/notes/#{@note.image_name}" %>">
   </div>
   <div class = "note-link" >
       <%= link_to("コメント一覧", "/room/#{@current_room.id}/comment_index") %>
@@ -16,7 +16,7 @@
 </div>
 
 <div class = "note-box">
-<h1>交換ノート</h1>
+<h1>交換ノート 2</h1>
    <div class = "note-name">
       投稿者：<%= link_to(@user2.name, "/user/#{@user2.id}") %>
    </div>
@@ -33,7 +33,7 @@
 </div>
 
 <div class = "note-box">
-<h1>交換ノート</h1>
+<h1>交換ノート 3</h1>
    <div class = "note-name">
       投稿者：<%= link_to(@user3.name, "/user/#{@user3.id}") %>
    </div>

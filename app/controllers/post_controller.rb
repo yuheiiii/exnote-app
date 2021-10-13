@@ -79,7 +79,7 @@ class PostController < ApplicationController
 
     if @note.save
       flash[:notice] = "ノートを投稿しました"
-      @post = Post.new(content:"#{@current_user.name} がノートを投稿しました", user_id:@current_user.id, room_id: @current_room.id, post_id: params[:id] )
+      @post = Post.new(content:"(1)#{@current_user.name} がノートを投稿しました", user_id:@current_user.id, room_id: @current_room.id, post_id: params[:id] )
       @post.save
       redirect_to("/room/#{params[:id]}")
    else
@@ -101,7 +101,7 @@ class PostController < ApplicationController
 
     if @note.save
       flash[:notice] = "ノートを投稿しました"
-      @post = Post.new(content:"#{@current_user.name} がノートを投稿しました", user_id:@current_user.id, room_id: @current_room.id, post_id: params[:id] )
+      @post = Post.new(content:"(2)#{@current_user.name} がノートを投稿しました", user_id:@current_user.id, room_id: @current_room.id, post_id: params[:id] )
       @post.save
       redirect_to("/room/#{params[:id]}")
    else
@@ -123,7 +123,7 @@ class PostController < ApplicationController
 
     if @note.save
       flash[:notice] = "ノートを投稿しました"
-      @post = Post.new(content:"#{@current_user.name} がノートを投稿しました", user_id:@current_user.id, room_id: @current_room.id, post_id: params[:id] )
+      @post = Post.new(content:"(3)#{@current_user.name} がノートを投稿しました", user_id:@current_user.id, room_id: @current_room.id, post_id: params[:id] )
       @post.save
       redirect_to("/room/#{params[:id]}")
    else
