@@ -8,11 +8,11 @@ local:
 
 # Use rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
 amazon:
-service: S3
-access_key_id: AKIAU5GTIOWHAHOK4LTI
-secret_access_key: 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
-region: us-east-1
-bucket: exnoteapp
+    service: S3
+    access_key_id: AKIAU5GTIOWHAHOK4LTI
+    secret_access_key: GSM3H+Wk5GWmizVVbF780ESOqhT/KUmNYt4uKr52
+    region: us-east-1
+    bucket: exnoteapp
 
 # Remember not to checkin your GCS keyfile to a repository
 # google:
