@@ -1,0 +1,16 @@
+<% @notes.each do |note| %>
+  <% if note.image.attached? %>
+  <div class="note-box-box">
+     <div class="note-name-name">
+       投稿者：<%= note.image_name %>
+      </div>
+     <div class="note-time-time">
+        <%= note.updated_at.to_s(:datetime_jp) %>
+     </div>
+        <%= image_tag note.image %>
+      <div class="note-link-link">
+        <%= link_to("コメント", "/room/#{@current_room.id}/note_comment/#{note.id}") %>
+      </div>
+  </div>
+  <% end %>
+<% end %>

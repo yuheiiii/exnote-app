@@ -37,7 +37,7 @@ class ApplicationController < ActionController::Base
   def forbid_login_room
     if @current_room.id != session[:room_id]
       flash[:notice] = "ログインが必要です"
-      redirect_to("/room/#{@current_room.id}")
+      redirect_to("/room/#{@current_room.id}/note_index")
     end
   end
 

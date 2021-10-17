@@ -33,6 +33,8 @@ gem 'bcrypt', '~> 3.1.11'
 
 gem 'carrierwave'
 
+gem 'aws-sdk-s3', require: false
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

@@ -1,0 +1,7 @@
+<div class="newroom-box">
+   <h1>ノート投稿</h1>
+   <%= form_with(model:@note,local:true)do|form| %>
+      <%= form.file_field :image %>
+      <%= form.submit %>
+      <% end %>
+</div>

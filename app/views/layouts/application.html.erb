@@ -18,7 +18,7 @@
   <header>
   <div class="header-logo">
   <% if @current_room && @current_user  %>
-    <%= link_to("交換ノート同好会", "/room/#{@current_room.id}") %>
+    <%= link_to("交換ノート同好会", "/room/#{@current_room.id}/note_index") %>
   <% elsif @current_user %>
     <%= link_to("交換ノート同好会", "/room/index") %>
   <% else %>
@@ -31,10 +31,13 @@
       <%= link_to("退出", "/room/out", {method: "post"}) %>
    </li>
    <li>
-      <%= link_to("コメント", "/room/#{@current_room.id}/comment_index") %>
+      <%= link_to("通知", "/room/#{@current_room.id}/comment_index") %>
    </li>
    <li>
-      <%= link_to("ノート一覧","/room/#{@current_room.id}") %>
+      <%= link_to("投稿", "/room/#{@current_room.id}/new_note") %>
+   </li>
+   <li>
+      <%= link_to("ノート一覧", "/room/#{@current_room.id}/note_index") %>
    </li>
    <li>
       <%= link_to("ユーザー：" + @current_user.name, "/user/#{@current_user.id}") %>

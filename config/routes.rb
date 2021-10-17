@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :home
   root 'home#top'
 
-  post "post/:id/comment" => "post#comment"
+  post "post/:id/note_comment_create/:id" => "post#note_comment_create"
   
   get "signup" => "user#new"
   post "user/create" => "user#create"
@@ -19,17 +19,16 @@ Rails.application.routes.draw do
   post "room/join" => "room#join"
   post "room/out" => "room#out"
   get "room/:id/comment_index" => "room#comment_index"
-  get "room/:id/image_new/3" => "post#image_new3"
-  get "room/:id/image_new/2" => "post#image_new2"
-  get "room/:id/image_new" => "post#image_new"
-  post "room/:id/image_create/3" => "post#image_create3"
-  post "room/:id/image_create/2" => "post#image_create2"
-  post "room/:id/image_create" => "post#image_create"
-  get "room/:id" => "room#show"
+  get "room/:id/note_index" => "room#note_index"
+  get "room/:id/new_note" => "room#new_note"
+  post "images" => "room#note_create"
+  get "room/:id/note_comment/:id" => "room#note_comment"
   
   get "/how_to_use" => "home#how_to_use"
   get "/tos" => "home#tos"
   get "/privacyPolicy" => "home#privacyPolicy"
   get "/" => "home#top"
+
+  resources :images
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

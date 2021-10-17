@@ -1,28 +1,15 @@
 <div class = "note-comment-box">
-   <h1>コメント</h1>
-   <% if @errormessage %> 
-     <div class="errormessage">
-         <%= @errormessage %>
-     </div>
-  <% end %>
-   <%= link_to("ノートに戻る", "/room/#{@current_room.id}") %>
- <%= form_tag("/post/#{@current_room.id}/comment") do %>
-     <input  name = "content" class = "note-textarea">
-     <input type = "submit" class = "note-btn" value = "送信">
-  <% end %>
+   <h1>通知</h1>
 </div>
 <% @posts.each do |post| %>
  <div class = "comment-box">
      <div class = "comment-top">
-          <div class = "comment-user">
-              投稿者：<%= post.user.name %>
-          </div>
-          <div class ="comment-time">
-              <%= post.created_at.to_s(:datetime_jp) %>
+          <div class = "notification-time">
+          <%= post.created_at.to_s(:datetime_jp) %>
           </div>
      </div>
      <div class = "comment-content">
-          <%= post.content %>
+          <%= post.image_name %>
      </div>
  </div>
 <% end %>

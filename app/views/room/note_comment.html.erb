@@ -1,0 +1,37 @@
+<h1>コメント</h1>
+<%= link_to("ノート一覧に戻る", "/room/#{@current_room.id}/note_index") %>
+<div class="note-box-box">
+     <div class="note-name-name">
+       投稿者：<%= @note.image_name %>
+      </div>
+     <div class="note-time-time">
+        <%= @note.updated_at.to_s(:datetime_jp) %>
+     </div>
+   <%= image_tag @note.image %>
+</div>
+<div class = "note-comment-box">
+   <% if @errormessage %> 
+     <div class="errormessage">
+         <%= @errormessage %>
+     </div>
+  <% end %>
+ <%= form_tag("/post/#{@current_room.id}/note_comment_create/#{params[:id]}") do %>
+     <input  name = "content" class = "note-textarea">
+     <input type = "submit" class = "note-btn" value = "送信">
+  <% end %>
+</div>
+<% @posts.each do |post| %>
+ <div class = "comment-box">
+     <div class = "comment-top">
+          <div class = "comment-user">
+              投稿者：<%= post.user.name %>
+          </div>
+          <div class ="comment-time">
+              <%= post.created_at.to_s(:datetime_jp) %>
+          </div>
+     </div>
+     <div class = "comment-content">
+          <%= post.content %>
+     </div>
+ </div>
+<% end %>

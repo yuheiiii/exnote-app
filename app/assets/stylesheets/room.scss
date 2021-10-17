@@ -124,6 +124,47 @@
     }
 }
 
+.note-box-box{
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 2px 6px #c1ced7;
+    width:800px;
+    margin: 20px auto 0 auto;
+    padding: 10px 0 20px 0;
+    text-align: center;
+}
+
+.note-box-box img{
+    width: 640px;
+    height: 486px;
+    object-fit: contain;
+}
+
+.note-time-time{
+    padding:20px 30px 10px 0px;
+    text-align: right;
+    float: right;
+}
+
+.note-name-name{
+    padding: 20px 0px 10px 50px;
+    text-align: left;
+    float: left;
+}
+
+.note-link-link{
+    padding: 10px 20px;
+    height: 30px;
+    margin: 0 80px;
+    font-size: 20px;
+    border: 1px solid green;
+}
+
+.note-box-box a{
+    text-align: center;
+    padding: 5px 250px;
+    line-height: 30px;
+}
 
 .note-box{
     background-color: white;
@@ -202,15 +243,11 @@
     text-align: center;
 }
 
-.note-comment-box h1{
-    margin-top: 50px;
-}
-
 .comment-box{
     background-color: white;
     overflow: hidden;
     box-shadow: 0 2px 6px #c1ced7;
-    width:500px;
+    width:800px;
     margin: 20px auto 0 auto;
     text-align: center;
 }
@@ -223,7 +260,7 @@
 
 
 .comment-user{
-    padding: 20px;
+    padding: 20px 0 20px 50px;
     text-align: left;
     float: left;
 }
@@ -232,6 +269,12 @@
     padding: 20px;
     text-align: right;
     float: right;
+}
+
+.notification-time{
+    padding: 20px 0 20px 50px;
+    text-align: left;
+    float: left;
 }
 
 .comment-title{
